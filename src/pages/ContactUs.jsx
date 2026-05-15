@@ -1,11 +1,14 @@
 import React from "react";
-import { PhoneCall, ArrowBigUp,AtSign,Rss } from "lucide-react";
+import { PhoneCall, ArrowBigUp, AtSign, Rss } from "lucide-react";
 import { motion } from "framer-motion";
 
 const ContactUs = () => {
   return (
     <>
-      <div id="contact" className="relative min-h-screen container flex flex-col justify-center items-center mx-auto text-white py-8 md:py-16 px-4">
+      <div
+        id="contact"
+        className="relative min-h-screen container flex flex-col justify-center items-center mx-auto text-white py-8 md:py-16 px-4"
+      >
         <motion.img
           src="/images/bg-side.png"
           className="absolute -left-1/4 max-h-screen hidden md:block"
@@ -36,28 +39,39 @@ const ContactUs = () => {
               </h2>
             </motion.div>
           </div>
-          <motion.div className="text-white flex-1 p-4 md:p-8 space-y-8 md:space-y-16 lg:space-y-20 lg:w-1/3"
-          initial={{ opacity: 0, }}
-          whileInView={{ opacity: 1, }}
-          transition={{ duration: 5 }}
-          viewport={{ once: false, amount: 0.3 }}
+          <motion.div
+            className="text-white flex-1 p-4 md:p-8 space-y-8 md:space-y-16 lg:space-y-20 lg:w-1/3"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 5 }}
+            viewport={{ once: false, amount: 0.3 }}
           >
             <div className="flex items-center space-x-2 md:space-x-4">
               <PhoneCall size={24} md:size={32} />
-              <h3 className="text-lg md:text-2xl lg:text-4xl">+919998877867</h3>
+              <h3 className="text-lg md:text-2xl lg:text-4xl">+91*********</h3>
             </div>
             <div className="flex items-center space-x-2 md:space-x-4">
               <AtSign size={24} md:size={32} />
-              <h3 className="text-lg md:text-2xl lg:text-4xl">info@cyrisenterprise.in</h3>
+              <h3 className="text-lg md:text-2xl lg:text-4xl">
+                info@*******.com
+              </h3>
             </div>
             <div className="flex items-center space-x-2 md:space-x-4">
               <Rss size={24} md:size={32} />
-              <h3 className="text-lg md:text-2xl lg:text-4xl">www.cyrisenterprise.in</h3>
+              <h3 className="text-lg md:text-2xl lg:text-4xl">
+                www.***********.in
+              </h3>
             </div>
           </motion.div>
         </div>
         <div className="absolute right-0 bottom-0 mb-8 md:mb-32">
-          <a href="#home"><ArrowBigUp size={32} md:size={40} className="cursor-pointer text-white/50 border-2 rounded-full border-white/50 hover:border-white hover:text-white"/></a>
+          <a href="#home">
+            <ArrowBigUp
+              size={32}
+              md:size={40}
+              className="cursor-pointer text-white/50 border-2 rounded-full border-white/50 hover:border-white hover:text-white"
+            />
+          </a>
         </div>
       </div>
       <hr />
