@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import "tailwindcss";
+
+
+
+@layer utilities {
+    *{
+        scroll-behavior: smooth;
+    }
+    #main-heading1 {
+        font-family: "Antonio Ultra-Bold", sans-serif;
+    }
+    
+    #main-heading2 {
+        font-family: "Antonio Light", sans-serif;
+    }
+    .clip-angled-box {
+      clip-path: polygon(0 0, 93% 0, 100% 15%, 100% 100%, 7% 100%, 0 85%);
+    }
+    .clip-hexagon {
+        clip-path: polygon(50% 0%,
+                93% 25%,
+                93% 75%,
+                50% 100%,
+                7% 75%,
+                7% 25%);
+    }
+    
+    .clip-hexagon-small {
+        clip-path: polygon(50% 0%,
+                100% 25%,
+                100% 75%,
+                50% 100%,
+                0% 75%,
+                0% 25%);
+    }
+}
+  
